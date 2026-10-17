@@ -49,4 +49,20 @@ Prefer **small, focused interfaces** over large, "fat" interfaces.
 - Both should depend on **abstractions**.
 - Abstractions should not depend on implementation details; implementation details should depend on abstractions.
 
+### DIP vs. IoC vs. DI (Crucial Interview Distinction)
+
+These three terms sound similar, but they operate at different conceptual levels:
+
+| Concept | What is it? | Simple Explanation |
+|---|---|---|
+| **DIP (Dependency Inversion Principle)** | High-level **Principle** | The architectural rule: Depend on abstractions (interfaces), not concrete classes. |
+| **IoC (Inversion of Control)** | Design **Approach / Philosophy** | Inverting the control flow: Instead of your code creating objects and controlling everything, a framework controls lifecycle and flow ("Don't call us, we'll call you"). |
+| **DI (Dependency Injection)** | Specific **Design Pattern / Technique** | A concrete way to implement IoC: Providing an object with its dependencies from the outside (usually via constructor) instead of calling `new`. |
+
+> **In ASP.NET Core:**
+> - You follow **DIP** when your service depends on an interface: `public class OrderService(IPaymentProcessor payment)`.
+> - You use **DI** when ASP.NET Core supplies the `IPaymentProcessor` instance into the constructor.
+> - The ASP.NET Core host container is the **IoC Container** that manages object creation and lifetimes (`AddScoped`, `AddSingleton`, `AddTransient`).
+
+
 
