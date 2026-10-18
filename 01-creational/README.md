@@ -12,7 +12,7 @@ Directly instantiating objects throughout an application with `new ClassName()` 
 |---|---|---|:---:|
 | 01 | [Singleton](./01-singleton/README.md) | Guarantees a class has only one instance and provides a global point of access to it. | ✅ Done |
 | 02 | [Factory Method](./02-factory-method/README.md) | Defines an interface for creating an object, letting subclasses decide which class to instantiate. | ✅ Done |
-| 03 | [Abstract Factory](./03-abstract-factory/README.md) | Provides an interface for creating families of related or dependent objects without specifying concrete classes. | ⏳ Todo |
+| 03 | [Abstract Factory](./03-abstract-factory/README.md) | Provides an interface for creating families of related or dependent objects without specifying concrete classes. | ✅ Done |
 | 04 | [Builder](./04-builder/README.md) | Separates the construction of a complex object from its representation. | ⏳ Todo |
 | 05 | [Prototype](./05-prototype/README.md) | Creates new objects by copying an existing instance (prototyping). | ⏳ Todo |
 

@@ -32,7 +32,7 @@ This repository documents software design patterns and architectural concepts wi
 |---|---|---|:---:|
 | 01 | [Singleton](./01-creational/01-singleton/README.md) | Ensure one instance with global access point; `AddSingleton` in DI | ✅ Done |
 | 02 | [Factory Method](./01-creational/02-factory-method/README.md) | Subclasses decide which class to instantiate | ✅ Done |
-| 03 | Abstract Factory | Create families of related or dependent objects | ⏳ Todo |
+| 03 | [Abstract Factory](./01-creational/03-abstract-factory/README.md) | Create families of related or dependent objects | ✅ Done |
 | 04 | Builder | Step-by-step construction of complex objects | ⏳ Todo |
 | 05 | Prototype | Clone existing objects without coupling to concrete classes | ⏳ Todo |
 
